@@ -1,0 +1,103 @@
+{
+   "worldpaySystems":[{
+            "name":"Visa",
+            "procent":"0.001",
+            "codificator": "4",
+            "balance": "0",
+            "Code of access PaySystem": "100",
+            "Banks Emitets with work": [
+                {
+                "name": "Bank A",
+                "Codificator of Bank": "1",
+                "Code of access pay":"gf5231ghd123"
+                }],
+            "Banks Aquire with work":[{
+                 "name": "Bank B",
+                 "Codificator of Bank": "2",
+                 "CABA":"451fg5dJ62dhad27"
+                }],
+            "Issued cards":["427663"]},
+        {
+            "name":"Mastercard",
+            "procent":"0.002",
+            "codificator": "5",
+            "balance": "0",
+            "Code of access PaySystem": "101",
+            "Banks Emitets with work": [{
+                "name": "Bank A",
+                "Codificator of Bank": "1"
+                }],
+            "Banks Aquire with work":[{
+                 "name": "Bank B",
+                 "Codificator of Bank": "2",
+                 "CABA":"31spPg5dY62dMaEa7"
+                }],
+            "Issued cards":["522763"]
+        }
+        ],
+   "bankAcquire":{
+        "name": "Bank B",
+        "balance":"0",
+        "procent":"0.02",
+        "ConnectedSystems":[
+            {
+              "name":"Visa",
+              "Code":"4",
+              "Code Access Bank Acquire": "451fg5dJ62dhad27"
+
+            },
+            {
+              "name":"Mastercard",
+              "Code":"5",
+              "Code Access Bank Acquire": "31spPg5dY62dMaEa7"
+            }],
+        "ConnectedShops": [{
+                "shop's name": "Magnit",
+                "SSC": "MaG2019YpaY21"
+            }]
+     },
+    "BankEmitets":[{
+        "name":"Bank A",
+        "balance":"0",
+        "procent":"0.017",
+        "cards":[{
+            "cardNumber": "417663",
+            "cardHolder": "Tim",
+            "MM/YY": "22/01",
+            "CVC": "931",
+            "balance": "2310"
+            },
+            {
+            "cardNumber": "512763",
+            "cardHolder": "Art",
+            "MM/YY": "12/01",
+            "CVC": "121",
+            "balance": "1020"
+        },
+          {
+                "cardNumber": "41",
+                "cardHolder": "A",
+                "MM/YY": "01/01",
+                "CVC": "121",
+                "balance": "1020"
+            }],
+        "Pay Systems with works":[{
+            "name": "Visa",
+            "Codeficator": "4",
+            "COAP":"gf5231ghd123"
+            },
+            {
+             "name": "Mastercard",
+             "Codeficator": "5",
+             "COAP":"101"
+            }]
+    }],
+    "Shop":{
+        "name":"Magnit",
+        "balance":"0",
+        "bankAcquireOn":{
+            "name": "bank B",
+            "procent": "0.02",
+            "Secret Service Code": "MaG2019YpaY21"
+        }}
+}
